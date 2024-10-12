@@ -7,5 +7,5 @@ Deployed in streamlit this is a proper web scrapper that gives you the scrapped 
 ![Screenshot 2024-10-12 233246](https://github.com/user-attachments/assets/7058d586-3129-4738-9bf5-a6739675b5e7)
 
 
-# Madee With ? 
+# Made With ? 
 Python and 💙
