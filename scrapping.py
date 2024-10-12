@@ -3,7 +3,12 @@ from selenium.webdriver.chromium.remote_connection import ChromiumRemoteConnecti
 
 from bs4 import BeautifulSoup
 
-SBR_WEBDRIVER = 'https://brd-customer-hl_a101e284-zone-scrapesmart:uz47tjb0bcem@brd.superproxy.io:9515'
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+SBR_WEBDRIVER = os.getenv("SBR_WEBDRIVER")
 
 def scrape_website(url):
     
