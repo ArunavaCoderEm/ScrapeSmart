@@ -7,7 +7,7 @@ from scrapping import (
     scrape_website
 )
 
-from ollama import parse_with_ollama_model
+from modelApi import parse_with_gemini_api
 
 st.title("ScrapeSmart")
 scrappable_url = st.text_input("Enter an URL here - ")
@@ -35,5 +35,5 @@ if "dom_content" in st.session_state:
             st.write("Parsing the website ...")
             
             dom_chunks = split_dom_content(st.session_state.dom_content)
-            parsed_result = parse_with_ollama_model(dom_chunks, parse_description)
+            parsed_result = parse_with_gemini_api(dom_chunks, parse_description)
             st.write(parsed_result)
